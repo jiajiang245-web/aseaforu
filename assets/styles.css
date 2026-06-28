@@ -33,11 +33,7 @@ main {
 }
 
 .index-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.35rem;
-  padding-top: max(3rem, env(safe-area-inset-top));
+  padding-top: max(4.5rem, env(safe-area-inset-top));
 }
 
 .sound-page {
@@ -47,6 +43,7 @@ main {
 }
 
 h1,
+h2,
 p {
   margin: 0;
   font: inherit;
@@ -56,12 +53,34 @@ h1 {
   margin-bottom: 3.2rem;
 }
 
+h2 {
+  margin: 3.2rem 0 1rem;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.catalog h2:first-child {
+  margin-top: 0;
+}
+
+.catalog .plain-link {
+  margin-bottom: 0.7rem;
+}
+
 .poem {
   white-space: pre-line;
   margin-bottom: 3.2rem;
 }
 
 .citation {
+  margin-bottom: 1.2rem;
+}
+
+.audio-title {
   margin-bottom: 3.2rem;
 }
 
